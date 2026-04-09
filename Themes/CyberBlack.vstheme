@@ -1,0 +1,301 @@
+<Themes>
+  <Theme Name="CyberBlack" GUID="{A5D3E9F1-B2C4-4D6E-8F0A-1C3E5A7B9C0D}" FallbackId="{1ded0138-47ce-435e-84ef-9ec1f439b749}">
+
+    <!-- ── ENVIRONMENT (SHELL) ─────────────────────────────────────────── -->
+    <Category Name="Environment" GUID="{624ed9c3-bdfd-41fa-96c3-7c824ea32e3d}">
+
+      <Color Name="EnvironmentBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+
+      <!-- Menus -->
+      <Color Name="MenuBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="MenuForeground">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="MenuBorder">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="MenuHoverBackground">
+        <Background Type="CT_RAW" Source="FF001A2B"/>
+      </Color>
+      <Color Name="MenuHoverText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="MenuSeparator">
+        <Background Type="CT_RAW" Source="FF0D1F2D"/>
+      </Color>
+
+      <!-- Title bar -->
+      <Color Name="MainWindowActiveCaption">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="MainWindowActiveCaptionText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="MainWindowBorderActive">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="MainWindowInactiveCaption">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="MainWindowInactiveCaptionText">
+        <Foreground Type="CT_RAW" Source="FF334455"/>
+      </Color>
+      <Color Name="MainWindowBorderInactive">
+        <Background Type="CT_RAW" Source="FF0D1F2D"/>
+      </Color>
+
+      <!-- Toolbar -->
+      <Color Name="CommandBarBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="CommandBarTextActive">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="CommandBarTextHover">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="CommandBarSelectedIcon">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+      <!-- Tool windows -->
+      <Color Name="ToolWindowBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="ToolWindowBorder">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="ToolWindowTabText">
+        <Foreground Type="CT_RAW" Source="FF8899AA"/>
+      </Color>
+      <Color Name="ToolWindowTabSelectedText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="ToolWindowTabSelectedBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="ToolWindowTabSelectedBorder">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+      <!-- Document tabs -->
+      <Color Name="FileTabBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="FileTabText">
+        <Foreground Type="CT_RAW" Source="FF556677"/>
+      </Color>
+      <Color Name="FileTabHotBackground">
+        <Background Type="CT_RAW" Source="FF020D15"/>
+      </Color>
+      <Color Name="FileTabHotText">
+        <Foreground Type="CT_RAW" Source="FF8899BB"/>
+      </Color>
+      <Color Name="FileTabSelectedBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="FileTabSelectedText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="FileTabSelectedBorder">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="FileTabModifiedText">
+        <Foreground Type="CT_RAW" Source="FFFFB347"/>
+      </Color>
+
+      <!-- Status bar -->
+      <Color Name="StatusBarDefault">
+        <Background Type="CT_RAW" Source="FF000D18"/>
+      </Color>
+      <Color Name="StatusBarDefaultText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="StatusBarDebugging">
+        <Background Type="CT_RAW" Source="FFFF1744"/>
+      </Color>
+      <Color Name="StatusBarDebuggingText">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF"/>
+      </Color>
+      <Color Name="StatusBarNoSolution">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+
+      <!-- Scroll bars -->
+      <Color Name="ScrollBarBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="ScrollBarThumbBackground">
+        <Background Type="CT_RAW" Source="FF0D1F2D"/>
+      </Color>
+      <Color Name="ScrollBarThumbMouseOverBackground">
+        <Background Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+      <!-- Tree views (Solution Explorer) -->
+      <Color Name="TreeViewBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="TreeViewGlyph">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+      <!-- Info bar / Notifications -->
+      <Color Name="InfoBarBackground">
+        <Background Type="CT_RAW" Source="FF000D18"/>
+      </Color>
+      <Color Name="InfoBarText">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+      <!-- Output window -->
+      <Color Name="OutputWindowBackground">
+        <Background Type="CT_RAW" Source="FF000000"/>
+      </Color>
+      <Color Name="OutputWindowText">
+        <Foreground Type="CT_RAW" Source="FF7EC8A0"/>
+      </Color>
+
+    </Category>
+
+    <!-- ── TEXT EDITOR ────────────────────────────────────────────────── -->
+    <Category Name="Text Editor Text" GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}">
+
+      <!-- Core -->
+      <Color Name="Plain Text">
+        <Background Type="CT_RAW" Source="FF000000"/>
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="Selected Text">
+        <Background Type="CT_RAW" Source="FF0D2137"/>
+      </Color>
+      <Color Name="Inactive Selected Text">
+        <Background Type="CT_RAW" Source="FF071520"/>
+      </Color>
+      <Color Name="Current Line (Active)">
+        <Background Type="CT_RAW" Source="FF04111A"/>
+      </Color>
+      <Color Name="Line Number">
+        <Foreground Type="CT_RAW" Source="FF2E6B7A"/>
+      </Color>
+      <Color Name="Track Changes After Save">
+        <Foreground Type="CT_RAW" Source="FF00FF94"/>
+      </Color>
+      <Color Name="Track Changes Before Save">
+        <Foreground Type="CT_RAW" Source="FFFF3366"/>
+      </Color>
+      <Color Name="Brace Matching (Rectangle)">
+        <Background Type="CT_RAW" Source="FF00BCD4"/>
+      </Color>
+
+      <!-- Syntax tokens -->
+      <Color Name="Keyword">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+      <Color Name="User Types">
+        <Foreground Type="CT_RAW" Source="FFFF2D78"/>
+      </Color>
+      <Color Name="User Types (Value types)">
+        <Foreground Type="CT_RAW" Source="FFFF2D78"/>
+      </Color>
+      <Color Name="User Types (Interfaces)">
+        <Foreground Type="CT_RAW" Source="FFFF7EC8"/>
+      </Color>
+      <Color Name="User Types (Enums)">
+        <Foreground Type="CT_RAW" Source="FFFF2D78"/>
+      </Color>
+      <Color Name="User Types (Delegates)">
+        <Foreground Type="CT_RAW" Source="FFFF7EC8"/>
+      </Color>
+      <Color Name="User Types (Type parameters)">
+        <Foreground Type="CT_RAW" Source="FFFF7EC8"/>
+      </Color>
+      <Color Name="Identifier">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="User Members (Methods)">
+        <Foreground Type="CT_RAW" Source="FFFFE600"/>
+      </Color>
+      <Color Name="User Members (Extension methods)">
+        <Foreground Type="CT_RAW" Source="FFFFB800"/>
+      </Color>
+      <Color Name="User Members (Fields)">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="User Members (Properties)">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="User Members (Parameters)">
+        <Foreground Type="CT_RAW" Source="FF80CBC4"/>
+      </Color>
+      <Color Name="User Members (Locals)">
+        <Foreground Type="CT_RAW" Source="FFCCD6F6"/>
+      </Color>
+      <Color Name="String">
+        <Foreground Type="CT_RAW" Source="FFFFB347"/>
+      </Color>
+      <Color Name="String (C# @ Verbatim)">
+        <Foreground Type="CT_RAW" Source="FFFFA020"/>
+      </Color>
+      <Color Name="String - Escape Sequence">
+        <Foreground Type="CT_RAW" Source="FFFF5733"/>
+      </Color>
+      <Color Name="Comment">
+        <Foreground Type="CT_RAW" Source="FF39D353"/>
+      </Color>
+      <Color Name="XML Doc Comment">
+        <Foreground Type="CT_RAW" Source="FF2ECC71"/>
+      </Color>
+      <Color Name="XML Doc Comment (Text)">
+        <Foreground Type="CT_RAW" Source="FF2ECC71"/>
+      </Color>
+      <Color Name="XML Doc Comment (Attribute Name)">
+        <Foreground Type="CT_RAW" Source="FF27AE60"/>
+      </Color>
+      <Color Name="XML Doc Comment (Delimiter)">
+        <Foreground Type="CT_RAW" Source="FF4FC3F7"/>
+      </Color>
+      <Color Name="Number">
+        <Foreground Type="CT_RAW" Source="FF00FF7F"/>
+      </Color>
+      <Color Name="Operator">
+        <Foreground Type="CT_RAW" Source="FF80DEEA"/>
+      </Color>
+      <Color Name="Punctuation">
+        <Foreground Type="CT_RAW" Source="FF546E7A"/>
+      </Color>
+      <Color Name="Preprocessor Keyword">
+        <Foreground Type="CT_RAW" Source="FFBA68C8"/>
+      </Color>
+      <Color Name="Preprocessor Text">
+        <Foreground Type="CT_RAW" Source="FF9C64D3"/>
+      </Color>
+
+      <!-- Errors and warnings -->
+      <Color Name="Syntax Error">
+        <Foreground Type="CT_RAW" Source="FFFF1744"/>
+      </Color>
+      <Color Name="Compiler Error">
+        <Foreground Type="CT_RAW" Source="FFFF1744"/>
+      </Color>
+      <Color Name="Other Error">
+        <Foreground Type="CT_RAW" Source="FFFF1744"/>
+      </Color>
+      <Color Name="Compiler Warning">
+        <Foreground Type="CT_RAW" Source="FFFFAB40"/>
+      </Color>
+      <Color Name="Warning">
+        <Foreground Type="CT_RAW" Source="FFFFAB40"/>
+      </Color>
+      <Color Name="Suggestion">
+        <Foreground Type="CT_RAW" Source="FF00E5FF"/>
+      </Color>
+
+    </Category>
+
+  </Theme>
+</Themes>

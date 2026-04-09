@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Codey.Extension</RootNamespace>
+    <AssemblyName>Codey.Extension</AssemblyName>
+    <UseCodebase>true</UseCodebase>
+    <GeneratePkgDefFile>true</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>true</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>true</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <CreateVsixContainer>true</CreateVsixContainer>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="icon.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Resource Include="codey_icon_small.png" />
+    <Content Include="LICENSE.txt">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <VSCTCompile Include="CodeyPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
+  </ItemGroup>
+
+  <!-- Hook CreateVsixContainer into the normal build so Ctrl+Shift+B produces the .vsix -->
+  <Target Name="PackageVsix" AfterTargets="Build" DependsOnTargets="GeneratePkgDef;CreateVsixContainer" />
+
+  <!-- Pre-define paths that Microsoft.VsSDK.targets needs, because IntermediateOutputPath
+       is not yet fully resolved when targets are imported in SDK-style projects. -->
+  <PropertyGroup>
+    <_VsSDKObjPath>$(MSBuildProjectDirectory)\obj\$(Configuration)\$(TargetFramework)\</_VsSDKObjPath>
+    <FileManifest>$(_VsSDKObjPath)files.json</FileManifest>
+    <TemplateFileManifest>$(_VsSDKObjPath)templateFiles.json</TemplateFileManifest>
+    <ResourceManifest>$(_VsSDKObjPath)resources.json</ResourceManifest>
+    <CtoFileManifest>$(_VsSDKObjPath)ctoFiles.json</CtoFileManifest>
+    <CtoCacheFile>$(_VsSDKObjPath)mergeCto.cache</CtoCacheFile>
+    <CreateTemplateManifestsCacheFile>$(_VsSDKObjPath)createTemplateManifests.cache</CreateTemplateManifestsCacheFile>
+    <IntermediateVsixManifest>$(_VsSDKObjPath)extension.vsixmanifest</IntermediateVsixManifest>
+    <TemplateOutputDirectory>$(_VsSDKObjPath)</TemplateOutputDirectory>
+    <CreatePkgDefAssemblyToProcess>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).dll</CreatePkgDefAssemblyToProcess>
+    <TargetVsixContainer>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName).vsix</TargetVsixContainer>
+  </PropertyGroup>
+
+  <Import Project="$(VsSDKInstall)\Microsoft.VsSDK.targets" />
+
+</Project>

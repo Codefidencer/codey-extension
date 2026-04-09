@@ -1,0 +1,6 @@
+// CyberBlack Visual Studio Theme
+// After installing: Tools → Options → Environment → General → Color Theme → CyberBlack
+
+[$RootKey$\Themes\{A5D3E9F1-B2C4-4D6E-8F0A-1C3E5A7B9C0D}]
+@="CyberBlack"
+"Path"="$PackageFolder$\Themes\CyberBlack.vstheme"

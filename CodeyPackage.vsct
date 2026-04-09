@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidCodeyPackage">
+    <Menus>
+      <Menu guid="guidCodeyCommandSet" id="TopLevelMenu" priority="0x700" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
+        <Strings>
+          <ButtonText>Codey Tutor</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+    <Groups>
+      <Group guid="guidCodeyCommandSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidCodeyCommandSet" id="TopLevelMenu"/>
+      </Group>
+    </Groups>
+    <Buttons>
+      <Button guid="guidCodeyCommandSet" id="OpenCodeyCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidCodeyCommandSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>Open Codey Tutor</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidCodeyPackage"
+                value="{51948C3C-9141-4F94-B4B9-7D8FBBC5145E}"/>
+    <GuidSymbol name="guidCodeyCommandSet"
+                value="{E679893A-634C-4BFC-A5C5-915CB40F8FB7}">
+      <IDSymbol name="TopLevelMenu"      value="0x1021"/>
+      <IDSymbol name="MyMenuGroup"       value="0x1020"/>
+      <IDSymbol name="OpenCodeyCommandId" value="0x0100"/>
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

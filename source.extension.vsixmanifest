@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
+                 xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Codey.Extension.51948C3C-9141-4F94-B4B9-7D8FBBC5145E"
+              Version="3.2.1"
+              Language="en-US"
+              Publisher="Codey C# Tutor" />
+    <DisplayName>Codey C# Tutor</DisplayName>
+    <Description xml:space="preserve">
+Codey Tutor — an interactive C# learning environment inside Visual Studio.
+
+52 guided exercises across 3 levels:
+• 18 Beginner (variables, loops, strings, arrays, classes)
+• 18 Intermediate (LINQ, collections, OOP, exceptions, async)
+• 16 Advanced (generics, patterns, algorithms, delegates, iterators)
+
+Features:
+• Live AI code review as you type (powered by Ollama — free, runs locally)
+• AI hints that guide without spoiling the answer
+• Built-in code runner — compiles and runs instantly
+• Progress tracking persisted across sessions
+• Works 100% offline — no API key, no subscription
+
+AI setup (one-time - free):
+1. Install Ollama from https://ollama.com
+2. ollama pull qwen2.5-coder:7b
+3. ollama serve
+
+Requires Visual Studio 2022 (17.0+) and .NET Framework 4.7.2+.</Description>
+    <Icon>icon.png</Icon>
+    <Tags>C#, learning, tutor, AI, Ollama, exercises, education, beginner, intermediate, advanced, coding</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community"    Version="[17.0, 19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise"   Version="[17.0, 19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.0, 19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName=".NET Framework" Version="[4.7.2,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|Codey.Extension;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>

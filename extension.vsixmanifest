@@ -1,0 +1,18 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="Codey.Extension.51948C3C-9141-4F94-B4B9-7D8FBBC5145E" Version="2.0" Language="en-US" Publisher="Codey" />
+    <DisplayName>Codey Tutor</DisplayName>
+    <Description>An interactive C# learning tutor inside Visual Studio. Work through guided exercises with smart AI hints powered by Claude.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 19.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0, 19.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.0, 19.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName=".NET Framework" Version="[4.7.2,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Codey.Extension.pkgdef" />
+  </Assets>
+</PackageManifest>
