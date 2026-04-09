@@ -1,6 +1,6 @@
-# Codey
+# Codey C# Tutor
 
-A Visual Studio 2022 extension that teaches you C# from inside the IDE.
+A Visual Studio extension that teaches you C# from inside the IDE.
 
 ## Features
 
