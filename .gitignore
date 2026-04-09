@@ -13,3 +13,6 @@ obj/
 # NuGet
 packages/
 *.nupkg
+
+# Claude Code
+.claude/
