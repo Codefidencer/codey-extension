@@ -17,9 +17,11 @@ A Visual Studio 2022 extension that teaches you C# from inside the IDE.
 
 ## Ollama Setup
 
+Install Ollama from https://ollama.com, then run:
+
 ```bash
+ollama pull qwen2.5-coder:7b
 ollama serve
-ollama pull qwen2.5-coder:1.5b
 ```
 
 ## Usage
